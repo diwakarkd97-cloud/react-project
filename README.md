@@ -1,16 +1,25 @@
-# React + Vite
+# Flexbox Card Layout Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple, responsive, and modern **Card Component** built using pure HTML and CSS Flexbox. It features fluid dimensions, elegant drop shadows, smooth hover transitions, and a mobile-optimized layout.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **Flexbox Grid Layout:** Cards wrap cleanly and stay perfectly aligned using modern CSS Flexbox.
+*   **Fluid & Responsive Design:** Automatically transitions to full-width cards on mobile displays (`max-width: 674px`).
+*   **Smooth Hover Effects:** Interactive depth changes with a `0.4s` smooth shadow transition.
+*   **Clean CSS Architecture:** Includes a global box-sizing reset for consistent cross-browser spacing.
 
-## React Compiler
+## 📁 Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```text
+├── index.html   # Main layout file
+└── App.css      # Component styling (Flex container & Card rules)
+```
+### CSS Key Breakdown (`App.css`)
+*   **`.container`**: Manages alignment, handles wrapping flow, and applies uniform spacing gaps between components.
+*   **`.card`**: Controls individual card aesthetics including padding, modern rounded borders, and subtle layout styling.
+*   **`@media (max-width: 674px)`**: Triggers mobile layout optimizations to stretch cards fully across smaller views.
 
-## Expanding the Oxlint configuration
+## 📄 License
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+This project is open-source and available under the [MIT License](LICENSE).
